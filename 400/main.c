@@ -168,7 +168,7 @@ void f_410(void)
 
 int main(int argc, const char *argv[])
 {
-  f_410();
+  f_407();
  
   return 0;
 }
