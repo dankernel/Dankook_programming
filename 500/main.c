@@ -139,11 +139,41 @@ void f_508(void)
   printf("Result2 : %f \n", (4.0/3.0) * r * r * r * pi);
 }
 
+void f_509(void)
+{
+  int ret = 0;
+  float ac, ae, bc;
+
+  printf("Input 4 Arg (AC, AE, BC) \n");
+  ret = scanf("%f", &ac);
+  ret = scanf("%f", &ae);
+  ret = scanf("%f", &bc);
+
+  printf("DE :  %f\n", ae * bc / ac);
+}
+
+void f_510(void)
+{
+  int x, y,
+      ret = 0;
+
+  printf("Input 2 Arg (x, y) \n");
+  ret = scanf("%d", &x);
+  ret = scanf("%d", &y);
+
+  if (0 < x && 0 < y)
+    printf("Result : 1 \n");
+  if (x < 0 && 0 < y)
+    printf("Result : 2 \n");
+  if (x < 0 && y < 0)
+    printf("Result : 3 \n");
+  if (0 < x && y < 0)
+    printf("Result : 4 \n");
+}
 
 int main(int argc, const char *argv[])
 {
-  f_508();
+  f_512();
   
   return 0;
 }
-
